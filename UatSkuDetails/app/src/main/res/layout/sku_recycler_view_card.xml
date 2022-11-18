@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/purple_200"
+    android:gravity="start"
+    android:layout_height="wrap_content">
+
+    <!-- Up Break Line   -->
+    <View
+        android:id="@+id/upperLine"
+        android:layout_width="358dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white" />
+
+    <!-- 1   dealIdTextView  -->
+    <TextView
+        android:id="@+id/dealIdTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:text = "Deal Id : "
+        android:layout_below="@+id/upperLine"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 2   totalTermsTextView    -->
+    <TextView
+        android:id="@+id/totalTermsTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text = "Total Terms : "
+        android:layout_below="@id/dealIdTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 3   termStyleTextView  -->
+    <TextView
+        android:id="@+id/termStyleTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "Term Style : "
+        android:textColor="@color/white"
+        android:layout_below="@id/totalTermsTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 4   dealTypeTextView  -->
+    <TextView
+        android:id="@+id/dealTypeTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/white"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "Deal Type : "
+        android:layout_below="@id/termStyleTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 5   iTypeTextView    -->
+    <TextView
+        android:id="@+id/iTypeTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "I Type : "
+        android:textColor="@color/white"
+        android:layout_below="@id/dealTypeTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 6   ttDealTextView    -->
+    <TextView
+        android:id="@+id/ttDealTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text = "TT Deal : "
+        android:layout_below = "@id/iTypeTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 7   iNumberTextView    -->
+    <TextView
+        android:id="@+id/iNumberTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text = "I Number : "
+        android:layout_below="@id/ttDealTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 8   conditionTypeTextView    -->
+    <TextView
+        android:id="@+id/conditionTypeTextView"
+        android:layout_width = "wrap_content"
+        android:textColor="@color/white"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "Condition Type : "
+        android:layout_below="@id/iNumberTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 9   countTextView    -->
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "Count : "
+        android:layout_below="@id/conditionTypeTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 10  amountTextView    -->
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text = "Amount : "
+        android:layout_below="@id/countTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 11  quantityEnforceTextView    -->
+    <TextView
+        android:id="@+id/quantityEnforceTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "Quantity Enforce : "
+        android:layout_below="@id/amountTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 12  subDiscountAvailableTextView    -->
+    <TextView
+        android:id="@+id/subDiscountAvailableTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "Sub Discount Available : "
+        android:layout_below="@id/quantityEnforceTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 13  rtTypeTextView    -->
+    <TextView
+        android:id="@+id/rtTypeTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "RT Type : "
+        android:layout_below="@id/subDiscountAvailableTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 14  rtValueTextView    -->
+    <TextView
+        android:id="@+id/rtValueTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "RT Value : "
+        android:layout_below="@id/rtTypeTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 15  meidTypeTextView    -->
+    <TextView
+        android:id="@+id/meidTypeTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:text = "MEID Type : "
+        android:layout_below="@id/rtValueTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 16  meidValueTextView    -->
+    <TextView
+        android:id="@+id/meidValueTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/white"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "MEID Value : "
+        android:layout_below="@id/meidTypeTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 17  dealDistributionTextView    -->
+    <TextView
+        android:id="@+id/dealDistributionTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:text = "Deal Distribution : "
+        android:layout_below="@id/meidValueTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- 18  offerProductCategoryIdTextView  -->
+    <TextView
+        android:id="@+id/offerProductCategoryIdTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "16sp"
+        android:gravity="left"
+        android:text = "Offer Product Category Id : "
+        android:textColor="@color/white"
+        android:layout_below="@id/dealDistributionTextView"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        />
+
+    <!-- Down Break Line   -->
+    <View
+        android:layout_width="358dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/offerProductCategoryIdTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white" />
+
+</RelativeLayout>
